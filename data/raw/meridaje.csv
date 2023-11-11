@@ -1,0 +1,1377 @@
+variante,meridaje
+Aglianico,Cheddar
+Barbera,Gruyere
+Cabernet Franc,Gruyere
+Cabernet Sauvignon,Cheddar
+Carignan,Gruyere
+Carmenere,Gruyere
+Chardonnay,Brie
+Cinsault,Gruyere
+Ensamblaje Blanco,Brie
+Ensamblaje Tinto,Cheddar
+Espumoso,Feta
+Garnacha,Gruyere
+Garnacha Blanca,Brie
+Gewurztraminer,Stilton
+Glera,Feta
+Grenache,Gruyere
+Late Harvest,Stilton
+Malbec,Cheddar
+Marselan,Cheddar
+Merlot,Gruyere
+Montepulciano,Gruyere
+Moscatel Blanca,Stilton
+Moscatel De Alejandria,Feta
+Moscatel Negro,Stilton
+Mourvedre,Cheddar
+Pais,Cheddar
+Petit Verdot,Gruyere
+Petite Sirah,Cheddar
+Pinot Grigio,Feta
+Pinot Noir,Gruyere
+Riesling,Stilton
+Romano,Cheddar
+Rose,Feta
+San Francisco,Cheddar
+Sauvignon Blanc,Feta
+Sauvignon Gris,Feta
+Semillon,Feta
+Shiraz,Cheddar
+Syrah,Cheddar
+Tempranillo,Gruyere
+Torontel,Stilton
+Viognier,Brie
+Aglianico, Gouda
+Barbera, Comte
+Cabernet Franc, Comte
+Cabernet Sauvignon, Gouda
+Carignan, Comte
+Carmenere, Comte
+Chardonnay, Camembert
+Cinsault, Comte
+Ensamblaje Blanco, Camembert
+Ensamblaje Tinto, Gouda
+Espumoso, Cotija
+Garnacha, Comte
+Garnacha Blanca, Camembert
+Gewurztraminer, Queso Azul
+Glera, Cotija
+Grenache, Comte
+Late Harvest, Queso Azul
+Malbec, Gouda
+Marselan, Gouda
+Merlot, Comte
+Montepulciano, Comte
+Moscatel Blanca, Queso Azul
+Moscatel De Alejandria, Cotija
+Moscatel Negro, Queso Azul
+Mourvedre, Gouda
+Pais, Gouda
+Petit Verdot, Comte
+Petite Sirah, Gouda
+Pinot Grigio, Cotija
+Pinot Noir, Comte
+Riesling, Queso Azul
+Romano, Gouda
+Rose, Cotija
+San Francisco, Gouda
+Sauvignon Blanc, Cotija
+Sauvignon Gris, Cotija
+Semillon, Cotija
+Shiraz, Gouda
+Syrah, Gouda
+Tempranillo, Comte
+Torontel, Queso Azul
+Viognier, Camembert
+Aglianico, Colby
+Barbera, Provolone
+Cabernet Franc, Provolone
+Cabernet Sauvignon, Colby
+Carignan, Provolone
+Carmenere, Provolone
+Chardonnay, Epoisses
+Cinsault, Provolone
+Ensamblaje Blanco, Epoisses
+Ensamblaje Tinto, Colby
+Espumoso, Queso Fresco
+Garnacha, Provolone
+Garnacha Blanca, Epoisses
+Gewurztraminer, Roquefort
+Glera, Queso Fresco
+Grenache, Provolone
+Late Harvest, Roquefort
+Malbec, Colby
+Marselan, Colby
+Merlot, Provolone
+Montepulciano, Provolone
+Moscatel Blanca, Roquefort
+Moscatel De Alejandria, Queso Fresco
+Moscatel Negro, Roquefort
+Mourvedre, Colby
+Pais, Colby
+Petit Verdot, Provolone
+Petite Sirah, Colby
+Pinot Grigio, Queso Fresco
+Pinot Noir, Provolone
+Riesling, Roquefort
+Romano, Colby
+Rose, Queso Fresco
+San Francisco, Colby
+Sauvignon Blanc, Queso Fresco
+Sauvignon Gris, Queso Fresco
+Semillon, Queso Fresco
+Shiraz, Colby
+Syrah, Colby
+Tempranillo, Provolone
+Torontel, Roquefort
+Viognier, Epoisses
+Aglianico, Ossau-Iraty
+Barbera, Edamental
+Cabernet Franc, Edamental
+Cabernet Sauvignon, Ossau-Iraty
+Carignan, Edamental
+Carmenere, Edamental
+Chardonnay, Burrata
+Cinsault, Edamental
+Ensamblaje Blanco, Burrata
+Ensamblaje Tinto, Ossau-Iraty
+Espumoso, Halloumi
+Garnacha, Edamental
+Garnacha Blanca, Burrata
+Gewurztraminer, Gorgonzola
+Glera, Halloumi
+Grenache, Edamental
+Late Harvest, Gorgonzola
+Malbec, Ossau-Iraty
+Marselan, Ossau-Iraty
+Merlot, Edamental
+Montepulciano, Edamental
+Moscatel Blanca, Gorgonzola
+Moscatel De Alejandria, Halloumi
+Moscatel Negro, Gorgonzola
+Mourvedre, Ossau-Iraty
+Pais, Ossau-Iraty
+Petit Verdot, Edamental
+Petite Sirah, Ossau-Iraty
+Pinot Grigio, Halloumi
+Pinot Noir, Edamental
+Riesling, Gorgonzola
+Romano, Ossau-Iraty
+Rose, Halloumi
+San Francisco, Ossau-Iraty
+Sauvignon Blanc, Halloumi
+Sauvignon Gris, Halloumi
+Semillon, Halloumi
+Shiraz, Ossau-Iraty
+Syrah, Ossau-Iraty
+Tempranillo, Edamental
+Torontel, Gorgonzola
+Viognier, Burrata
+Aglianico, Muenster
+Barbera, Mozzarela
+Cabernet Franc, Mozzarela
+Cabernet Sauvignon, Muenster
+Carignan, Mozzarela
+Carmenere, Mozzarela
+Chardonnay, Delice de Bougorgne
+Cinsault, Mozzarela
+Ensamblaje Blanco, Delice de Bougorgne
+Ensamblaje Tinto, Muenster
+Espumoso, Mizithra
+Garnacha, Mozzarela
+Garnacha Blanca, Delice de Bougorgne
+Gewurztraminer, Brie
+Glera, Mizithra
+Grenache, Mozzarela
+Late Harvest, Brie
+Malbec, Muenster
+Marselan, Muenster
+Merlot, Mozzarela
+Montepulciano, Mozzarela
+Moscatel Blanca, Brie
+Moscatel De Alejandria, Mizithra
+Moscatel Negro, Brie
+Mourvedre, Muenster
+Pais, Muenster
+Petit Verdot, Mozzarela
+Petite Sirah, Muenster
+Pinot Grigio, Mizithra
+Pinot Noir, Mozzarela
+Riesling, Brie
+Romano, Muenster
+Rose, Mizithra
+San Francisco, Muenster
+Sauvignon Blanc, Mizithra
+Sauvignon Gris, Mizithra
+Semillon, Mizithra
+Shiraz, Muenster
+Syrah, Muenster
+Tempranillo, Mozzarela
+Torontel, Brie
+Viognier, Delice de Bougorgne
+Aglianico, Carne de Res
+Barbera, Scamorza
+Cabernet Franc, Scamorza
+Cabernet Sauvignon, Carne de Res
+Carignan, Scamorza
+Carmenere, Scamorza
+Chardonnay, Gruyere
+Cinsault, Scamorza
+Ensamblaje Blanco, Gruyere
+Ensamblaje Tinto, Carne de Res
+Espumoso, Crema Agria
+Garnacha, Scamorza
+Garnacha Blanca, Gruyere
+Gewurztraminer, Camembert
+Glera, Crema Agria
+Grenache, Scamorza
+Late Harvest, Camembert
+Malbec, Carne de Res
+Marselan, Carne de Res
+Merlot, Scamorza
+Montepulciano, Scamorza
+Moscatel Blanca, Camembert
+Moscatel De Alejandria, Crema Agria
+Moscatel Negro, Camembert
+Mourvedre, Carne de Res
+Pais, Carne de Res
+Petit Verdot, Scamorza
+Petite Sirah, Carne de Res
+Pinot Grigio, Crema Agria
+Pinot Noir, Scamorza
+Riesling, Camembert
+Romano, Carne de Res
+Rose, Pollo
+San Francisco, Carne de Res
+Sauvignon Blanc, Crema Agria
+Sauvignon Gris, Crema Agria
+Semillon, Crema Agria
+Shiraz, Carne de Res
+Syrah, Carne de Res
+Tempranillo, Scamorza
+Torontel, Camembert
+Viognier, Gruyere
+Aglianico, Cordero
+Barbera, Cheddar
+Cabernet Franc, Cheddar
+Cabernet Sauvignon, Cordero
+Carignan, Cheddar
+Carmenere, Cheddar
+Chardonnay, Comte
+Cinsault, Pollo
+Ensamblaje Blanco, Comte
+Ensamblaje Tinto, Cordero
+Espumoso, Queso Crema
+Garnacha, Pollo
+Garnacha Blanca, Comte
+Gewurztraminer, Epoisses
+Glera, Queso Crema
+Grenache, Cheddar
+Late Harvest, Epoisses
+Malbec, Cordero
+Marselan, Cordero
+Merlot, Cheddar
+Montepulciano, Cheddar
+Moscatel Blanca, Epoisses
+Moscatel De Alejandria, Queso Crema
+Moscatel Negro, Epoisses
+Mourvedre, Cordero
+Pais, Cordero
+Petit Verdot, Cheddar
+Petite Sirah, Cordero
+Pinot Grigio, Queso Crema
+Pinot Noir, Pollo
+Riesling, Epoisses
+Romano, Cordero
+Rose, Cerdo
+San Francisco, Cordero
+Sauvignon Blanc, Queso Crema
+Sauvignon Gris, Queso Crema
+Semillon, Queso Crema
+Shiraz, Cordero
+Syrah, Cordero
+Tempranillo, Pollo
+Torontel, Epoisses
+Viognier, Comte
+Aglianico, Venado
+Barbera, Gouda
+Cabernet Franc, Gouda
+Cabernet Sauvignon, Venado
+Carignan, Gouda
+Carmenere, Gouda
+Chardonnay, Provolone
+Cinsault, Cerdo
+Ensamblaje Blanco, Provolone
+Ensamblaje Tinto, Venado
+Espumoso, Ricotta
+Garnacha, Cerdo
+Garnacha Blanca, Provolone
+Gewurztraminer, Burrata
+Glera, Ricotta
+Grenache, Gouda
+Late Harvest, Burrata
+Malbec, Venado
+Marselan, Venado
+Merlot, Gouda
+Montepulciano, Gouda
+Moscatel Blanca, Burrata
+Moscatel De Alejandria, Ricotta
+Moscatel Negro, Burrata
+Mourvedre, Venado
+Pais, Venado
+Petit Verdot, Gouda
+Petite Sirah, Venado
+Pinot Grigio, Ricotta
+Pinot Noir, Cerdo
+Riesling, Burrata
+Romano, Venado
+Rose, Chuleta
+San Francisco, Venado
+Sauvignon Blanc, Ricotta
+Sauvignon Gris, Ricotta
+Semillon, Ricotta
+Shiraz, Venado
+Syrah, Venado
+Tempranillo, Cerdo
+Torontel, Burrata
+Viognier, Provolone
+Aglianico, Judía Pinta
+Barbera, Colby
+Cabernet Franc, Colby
+Cabernet Sauvignon, Judía Pinta
+Carignan, Colby
+Carmenere, Colby
+Chardonnay, Edamental
+Cinsault, Chuleta
+Ensamblaje Blanco, Edamental
+Ensamblaje Tinto, Judía Pinta
+Espumoso, Havarti
+Garnacha, Chuleta
+Garnacha Blanca, Edamental
+Gewurztraminer, Delice de Bougorgne
+Glera, Havarti
+Grenache, Colby
+Late Harvest, Delice de Bougorgne
+Malbec, Judía Pinta
+Marselan, Judía Pinta
+Merlot, Colby
+Montepulciano, Colby
+Moscatel Blanca, Delice de Bougorgne
+Moscatel De Alejandria, Havarti
+Moscatel Negro, Delice de Bougorgne
+Mourvedre, Judía Pinta
+Pais, Judía Pinta
+Petit Verdot, Colby
+Petite Sirah, Judía Pinta
+Pinot Grigio, Havarti
+Pinot Noir, Chuleta
+Riesling, Delice de Bougorgne
+Romano, Judía Pinta
+Rose, Tofu
+San Francisco, Judía Pinta
+Sauvignon Blanc, Havarti
+Sauvignon Gris, Havarti
+Semillon, Havarti
+Shiraz, Judía Pinta
+Syrah, Judía Pinta
+Tempranillo, Chuleta
+Torontel, Delice de Bougorgne
+Viognier, Edamental
+Aglianico, Frijoles Negos
+Barbera, Ossau-Iraty
+Cabernet Franc, Ossau-Iraty
+Cabernet Sauvignon, Frijoles Negos
+Carignan, Ossau-Iraty
+Carmenere, Ossau-Iraty
+Chardonnay, Mozzarela
+Cinsault, Tofu
+Ensamblaje Blanco, Mozzarela
+Ensamblaje Tinto, Frijoles Negos
+Espumoso, Chevre
+Garnacha, Tofu
+Garnacha Blanca, Mozzarela
+Gewurztraminer, Gruyere
+Glera, Chevre
+Grenache, Ossau-Iraty
+Malbec, Frijoles Negos
+Marselan, Frijoles Negos
+Merlot, Ossau-Iraty
+Montepulciano, Ossau-Iraty
+Moscatel Blanca, Gruyere
+Moscatel De Alejandria, Chevre
+Mourvedre, Frijoles Negos
+Pais, Frijoles Negos
+Petit Verdot, Ossau-Iraty
+Petite Sirah, Frijoles Negos
+Pinot Grigio, Chevre
+Pinot Noir, Tofu
+Riesling, Gruyere
+Romano, Frijoles Negos
+Rose, Seitan
+San Francisco, Frijoles Negos
+Sauvignon Blanc, Chevre
+Sauvignon Gris, Chevre
+Semillon, Chevre
+Shiraz, Frijoles Negos
+Syrah, Frijoles Negos
+Tempranillo, Tofu
+Torontel, Gruyere
+Viognier, Mozzarela
+Aglianico, Frijoles Blancos
+Barbera, Muenster
+Cabernet Franc, Muenster
+Cabernet Sauvignon, Frijoles Blancos
+Carignan, Muenster
+Carmenere, Muenster
+Chardonnay, Scamorza
+Cinsault, Seitan
+Ensamblaje Blanco, Scamorza
+Ensamblaje Tinto, Frijoles Blancos
+Espumoso, Cottage
+Garnacha, Seitan
+Garnacha Blanca, Scamorza
+Gewurztraminer, Comte
+Glera, Cottage
+Grenache, Muenster
+Malbec, Frijoles Blancos
+Marselan, Frijoles Blancos
+Merlot, Muenster
+Montepulciano, Muenster
+Moscatel Blanca, Comte
+Moscatel De Alejandria, Cottage
+Mourvedre, Frijoles Blancos
+Pais, Frijoles Blancos
+Petit Verdot, Muenster
+Petite Sirah, Frijoles Blancos
+Pinot Grigio, Cottage
+Pinot Noir, Seitan
+Riesling, Comte
+Romano, Frijoles Blancos
+Rose, Salami
+San Francisco, Frijoles Blancos
+Sauvignon Blanc, Cottage
+Sauvignon Gris, Cottage
+Semillon, Cottage
+Shiraz, Frijoles Blancos
+Syrah, Frijoles Blancos
+Tempranillo, Seitan
+Torontel, Comte
+Viognier, Scamorza
+Aglianico, Lenteja
+Barbera, Parmesano
+Cabernet Franc, Parmesano
+Cabernet Sauvignon, Lenteja
+Carignan, Parmesano
+Carmenere, Parmesano
+Chardonnay, Langosta
+Cinsault, Cebolla
+Ensamblaje Blanco, Langosta
+Ensamblaje Tinto, Lenteja
+Espumoso, Brie
+Garnacha, Cebolla
+Garnacha Blanca, Langosta
+Gewurztraminer, Provolone
+Glera, Brie
+Grenache, Parmesano
+Malbec, Lenteja
+Marselan, Lenteja
+Merlot, Parmesano
+Montepulciano, Parmesano
+Moscatel Blanca, Provolone
+Moscatel De Alejandria, Brie
+Mourvedre, Lenteja
+Pais, Lenteja
+Petit Verdot, Parmesano
+Petite Sirah, Lenteja
+Pinot Grigio, Brie
+Pinot Noir, Cebolla
+Riesling, Provolone
+Romano, Lenteja
+Rose, Tocineta
+San Francisco, Lenteja
+Sauvignon Blanc, Brie
+Sauvignon Gris, Brie
+Semillon, Brie
+Shiraz, Lenteja
+Syrah, Lenteja
+Tempranillo, Cebolla
+Torontel, Provolone
+Viognier, Langosta
+Aglianico, Cilantro
+Barbera, Grada Padano
+Cabernet Franc, Grada Padano
+Cabernet Sauvignon, Cilantro
+Carignan, Grada Padano
+Carmenere, Grada Padano
+Chardonnay, Cangrejo
+Cinsault, Ajo
+Ensamblaje Blanco, Cangrejo
+Ensamblaje Tinto, Cilantro
+Espumoso, Camembert
+Garnacha, Ajo
+Garnacha Blanca, Cangrejo
+Gewurztraminer, Edamental
+Glera, Camembert
+Grenache, Grada Padano
+Malbec, Cilantro
+Marselan, Cilantro
+Merlot, Grada Padano
+Montepulciano, Grada Padano
+Moscatel Blanca, Edamental
+Moscatel De Alejandria, Camembert
+Mourvedre, Cilantro
+Pais, Cilantro
+Petit Verdot, Grada Padano
+Petite Sirah, Cilantro
+Pinot Grigio, Camembert
+Pinot Noir, Ajo
+Riesling, Edamental
+Romano, Cilantro
+Rose, Charcuteria
+San Francisco, Cilantro
+Sauvignon Blanc, Camembert
+Sauvignon Gris, Camembert
+Semillon, Camembert
+Shiraz, Cilantro
+Syrah, Cilantro
+Tempranillo, Ajo
+Torontel, Edamental
+Viognier, Cangrejo
+Aglianico, Comino
+Barbera, Pecorino
+Cabernet Franc, Pecorino
+Cabernet Sauvignon, Comino
+Carignan, Pecorino
+Carmenere, Pecorino
+Chardonnay, Camarones
+Cinsault, Chalota
+Ensamblaje Blanco, Camarones
+Ensamblaje Tinto, Comino
+Espumoso, Epoisses
+Garnacha, Chalota
+Garnacha Blanca, Camarones
+Gewurztraminer, Mozzarela
+Glera, Epoisses
+Grenache, Pecorino
+Malbec, Comino
+Marselan, Comino
+Merlot, Pecorino
+Montepulciano, Pecorino
+Moscatel Blanca, Mozzarela
+Moscatel De Alejandria, Epoisses
+Mourvedre, Comino
+Pais, Comino
+Petit Verdot, Pecorino
+Petite Sirah, Comino
+Pinot Grigio, Epoisses
+Pinot Noir, Chalota
+Riesling, Mozzarela
+Romano, Comino
+Rose, Jamon
+San Francisco, Comino
+Sauvignon Blanc, Epoisses
+Sauvignon Gris, Epoisses
+Semillon, Epoisses
+Shiraz, Comino
+Syrah, Comino
+Tempranillo, Chalota
+Torontel, Mozzarela
+Viognier, Camarones
+Aglianico, Curcuma
+Barbera, Asiago
+Cabernet Franc, Asiago
+Cabernet Sauvignon, Curcuma
+Carignan, Asiago
+Carmenere, Asiago
+Chardonnay, Pollo
+Cinsault, Hongos
+Ensamblaje Blanco, Pollo
+Ensamblaje Tinto, Curcuma
+Espumoso, Burrata
+Garnacha, Hongos
+Garnacha Blanca, Pollo
+Gewurztraminer, Scamorza
+Glera, Burrata
+Grenache, Asiago
+Malbec, Curcuma
+Marselan, Curcuma
+Merlot, Asiago
+Montepulciano, Asiago
+Moscatel Blanca, Scamorza
+Moscatel De Alejandria, Burrata
+Mourvedre, Curcuma
+Pais, Curcuma
+Petit Verdot, Asiago
+Petite Sirah, Curcuma
+Pinot Grigio, Burrata
+Pinot Noir, Hongos
+Riesling, Scamorza
+Romano, Curcuma
+Rose, Batata
+San Francisco, Curcuma
+Sauvignon Blanc, Burrata
+Sauvignon Gris, Burrata
+Semillon, Burrata
+Shiraz, Curcuma
+Syrah, Curcuma
+Tempranillo, Hongos
+Torontel, Scamorza
+Viognier, Pollo
+Barbera, Manchego
+Cabernet Franc, Manchego
+Carignan, Manchego
+Carmenere, Manchego
+Chardonnay, Cerdo
+Ensamblaje Blanco, Cerdo
+Espumoso, Delice de Bougorgne
+Garnacha Blanca, Cerdo
+Gewurztraminer, Langosta
+Glera, Delice de Bougorgne
+Grenache, Manchego
+Merlot, Manchego
+Montepulciano, Manchego
+Moscatel Blanca, Langosta
+Moscatel De Alejandria, Delice de Bougorgne
+Petit Verdot, Manchego
+Pinot Grigio, Delice de Bougorgne
+Riesling, Langosta
+Rose, Zanahoria
+Sauvignon Blanc, Delice de Bougorgne
+Sauvignon Gris, Delice de Bougorgne
+Semillon, Delice de Bougorgne
+Torontel, Langosta
+Viognier, Cerdo
+Barbera, Pollo
+Cabernet Franc, Pollo
+Carignan, Pollo
+Carmenere, Pollo
+Chardonnay, Chuleta
+Ensamblaje Blanco, Chuleta
+Espumoso, Gruyere
+Garnacha Blanca, Chuleta
+Gewurztraminer, Cangrejo
+Glera, Gruyere
+Grenache, Pollo
+Merlot, Pollo
+Montepulciano, Pollo
+Moscatel Blanca, Cangrejo
+Moscatel De Alejandria, Gruyere
+Petit Verdot, Pollo
+Pinot Grigio, Gruyere
+Riesling, Cangrejo
+Rose, Calabaza
+Sauvignon Blanc, Gruyere
+Sauvignon Gris, Gruyere
+Semillon, Gruyere
+Torontel, Cangrejo
+Viognier, Chuleta
+Barbera, Cerdo
+Cabernet Franc, Cerdo
+Carignan, Cerdo
+Carmenere, Cerdo
+Chardonnay, Tofu
+Ensamblaje Blanco, Tofu
+Espumoso, Comte
+Garnacha Blanca, Tofu
+Gewurztraminer, Camarones
+Glera, Comte
+Grenache, Cerdo
+Merlot, Cerdo
+Montepulciano, Cerdo
+Moscatel Blanca, Camarones
+Moscatel De Alejandria, Comte
+Petit Verdot, Cerdo
+Pinot Grigio, Comte
+Riesling, Camarones
+Rose, Nabo
+Sauvignon Blanc, Comte
+Sauvignon Gris, Comte
+Semillon, Comte
+Torontel, Camarones
+Viognier, Tofu
+Barbera, Chuleta
+Cabernet Franc, Chuleta
+Carignan, Chuleta
+Carmenere, Chuleta
+Chardonnay, Seitan
+Ensamblaje Blanco, Seitan
+Espumoso, Provolone
+Garnacha Blanca, Seitan
+Gewurztraminer, Pollo
+Glera, Provolone
+Grenache, Chuleta
+Merlot, Chuleta
+Montepulciano, Chuleta
+Moscatel Blanca, Pollo
+Moscatel De Alejandria, Provolone
+Petit Verdot, Chuleta
+Pinot Grigio, Provolone
+Riesling, Pollo
+Rose, Zapallo
+Sauvignon Blanc, Provolone
+Sauvignon Gris, Provolone
+Semillon, Provolone
+Torontel, Pollo
+Viognier, Seitan
+Barbera, Tofu
+Cabernet Franc, Tofu
+Carignan, Tofu
+Carmenere, Tofu
+Chardonnay, Cebolla
+Ensamblaje Blanco, Cebolla
+Espumoso, Edamental
+Garnacha Blanca, Cebolla
+Gewurztraminer, Cerdo
+Glera, Edamental
+Grenache, Tofu
+Merlot, Tofu
+Montepulciano, Tofu
+Moscatel Blanca, Cerdo
+Moscatel De Alejandria, Edamental
+Petit Verdot, Tofu
+Pinot Grigio, Edamental
+Riesling, Cerdo
+Rose, Menta
+Sauvignon Blanc, Edamental
+Sauvignon Gris, Edamental
+Semillon, Edamental
+Torontel, Cerdo
+Viognier, Cebolla
+Barbera, Seitan
+Cabernet Franc, Seitan
+Carignan, Seitan
+Carmenere, Seitan
+Chardonnay, Ajo
+Ensamblaje Blanco, Ajo
+Espumoso, Mozzarela
+Garnacha Blanca, Ajo
+Gewurztraminer, Chuleta
+Glera, Mozzarela
+Grenache, Seitan
+Merlot, Seitan
+Montepulciano, Seitan
+Moscatel Blanca, Chuleta
+Moscatel De Alejandria, Mozzarela
+Petit Verdot, Seitan
+Pinot Grigio, Mozzarela
+Riesling, Chuleta
+Rose, Basil
+Sauvignon Blanc, Mozzarela
+Sauvignon Gris, Mozzarela
+Semillon, Mozzarela
+Torontel, Chuleta
+Viognier, Ajo
+Barbera, Carne de Res
+Cabernet Franc, Carne de Res
+Carignan, Carne de Res
+Carmenere, Carne de Res
+Chardonnay, Chalota
+Ensamblaje Blanco, Chalota
+Espumoso, Scamorza
+Garnacha Blanca, Chalota
+Gewurztraminer, Tofu
+Glera, Scamorza
+Grenache, Carne de Res
+Merlot, Carne de Res
+Montepulciano, Carne de Res
+Moscatel Blanca, Tofu
+Moscatel De Alejandria, Scamorza
+Petit Verdot, Carne de Res
+Pinot Grigio, Scamorza
+Riesling, Tofu
+Rose, Cilantro
+Sauvignon Blanc, Scamorza
+Sauvignon Gris, Scamorza
+Semillon, Scamorza
+Torontel, Tofu
+Viognier, Chalota
+Barbera, Cordero
+Cabernet Franc, Cordero
+Carignan, Cordero
+Carmenere, Cordero
+Chardonnay, Cebollin
+Ensamblaje Blanco, Cebollin
+Espumoso, Parmesano
+Garnacha Blanca, Cebollin
+Gewurztraminer, Seitan
+Glera, Parmesano
+Grenache, Cordero
+Merlot, Cordero
+Montepulciano, Cordero
+Moscatel Blanca, Seitan
+Moscatel De Alejandria, Parmesano
+Petit Verdot, Cordero
+Pinot Grigio, Parmesano
+Riesling, Seitan
+Rose, Shiso
+Sauvignon Blanc, Parmesano
+Sauvignon Gris, Parmesano
+Semillon, Parmesano
+Torontel, Seitan
+Viognier, Cebollin
+Barbera, Venado
+Cabernet Franc, Venado
+Carignan, Venado
+Carmenere, Venado
+Chardonnay, Hongos
+Ensamblaje Blanco, Hongos
+Espumoso, Grada Padano
+Garnacha Blanca, Hongos
+Gewurztraminer, Salami
+Glera, Grada Padano
+Grenache, Venado
+Merlot, Venado
+Montepulciano, Venado
+Moscatel Blanca, Salami
+Moscatel De Alejandria, Grada Padano
+Petit Verdot, Venado
+Pinot Grigio, Grada Padano
+Riesling, Salami
+Rose, Perejil
+Sauvignon Blanc, Grada Padano
+Sauvignon Gris, Grada Padano
+Semillon, Grada Padano
+Torontel, Salami
+Viognier, Hongos
+Barbera, Cebolla
+Cabernet Franc, Cebolla
+Carignan, Cebolla
+Carmenere, Cebolla
+Espumoso, Pecorino
+Gewurztraminer, Tocineta
+Glera, Pecorino
+Grenache, Cebolla
+Merlot, Cebolla
+Montepulciano, Cebolla
+Moscatel Blanca, Tocineta
+Moscatel De Alejandria, Pecorino
+Petit Verdot, Cebolla
+Pinot Grigio, Pecorino
+Riesling, Tocineta
+Sauvignon Blanc, Pecorino
+Sauvignon Gris, Pecorino
+Semillon, Pecorino
+Torontel, Tocineta
+Barbera, Ajo
+Cabernet Franc, Ajo
+Carignan, Ajo
+Carmenere, Ajo
+Espumoso, Asiago
+Gewurztraminer, Charcuteria
+Glera, Asiago
+Grenache, Ajo
+Merlot, Ajo
+Montepulciano, Ajo
+Moscatel Blanca, Charcuteria
+Moscatel De Alejandria, Asiago
+Petit Verdot, Ajo
+Pinot Grigio, Asiago
+Riesling, Charcuteria
+Sauvignon Blanc, Asiago
+Sauvignon Gris, Asiago
+Semillon, Asiago
+Torontel, Charcuteria
+Barbera, Chalota
+Cabernet Franc, Chalota
+Carignan, Chalota
+Carmenere, Chalota
+Espumoso, Manchego
+Gewurztraminer, Jamon
+Glera, Manchego
+Grenache, Chalota
+Merlot, Chalota
+Montepulciano, Chalota
+Moscatel Blanca, Jamon
+Moscatel De Alejandria, Manchego
+Petit Verdot, Chalota
+Pinot Grigio, Manchego
+Riesling, Jamon
+Sauvignon Blanc, Manchego
+Sauvignon Gris, Manchego
+Semillon, Manchego
+Torontel, Jamon
+Barbera, Cebollin
+Cabernet Franc, Cebollin
+Carignan, Cebollin
+Carmenere, Cebollin
+Espumoso, Almeja
+Gewurztraminer, Barbecue
+Glera, Almeja
+Grenache, Cebollin
+Merlot, Cebollin
+Montepulciano, Cebollin
+Moscatel Blanca, Barbecue
+Moscatel De Alejandria, Almeja
+Petit Verdot, Cebollin
+Pinot Grigio, Halibut
+Riesling, Barbecue
+Sauvignon Blanc, Halibut
+Sauvignon Gris, Halibut
+Semillon, Halibut
+Torontel, Barbecue
+Barbera, Pimiento
+Cabernet Franc, Pimiento
+Carignan, Pimiento
+Carmenere, Pimiento
+Espumoso, Ostra
+Gewurztraminer, Teriyaki
+Glera, Ostra
+Grenache, Pimiento
+Merlot, Pimiento
+Montepulciano, Pimiento
+Moscatel Blanca, Teriyaki
+Moscatel De Alejandria, Ostra
+Petit Verdot, Pimiento
+Pinot Grigio, Bacalao
+Riesling, Teriyaki
+Sauvignon Blanc, Bacalao
+Sauvignon Gris, Bacalao
+Semillon, Bacalao
+Torontel, Teriyaki
+Barbera, Tomate
+Cabernet Franc, Tomate
+Carignan, Tomate
+Carmenere, Tomate
+Espumoso, Vieira
+Gewurztraminer, Vinagreta
+Glera, Vieira
+Grenache, Tomate
+Merlot, Tomate
+Montepulciano, Tomate
+Moscatel Blanca, Vinagreta
+Moscatel De Alejandria, Vieira
+Petit Verdot, Tomate
+Pinot Grigio, Salmon
+Riesling, Vinagreta
+Sauvignon Blanc, Salmon
+Sauvignon Gris, Salmon
+Semillon, Salmon
+Torontel, Vinagreta
+Barbera, Berenjena
+Cabernet Franc, Berenjena
+Carignan, Berenjena
+Carmenere, Berenjena
+Espumoso, Langosta
+Gewurztraminer, Marinado
+Glera, Langosta
+Grenache, Berenjena
+Merlot, Berenjena
+Montepulciano, Berenjena
+Moscatel Blanca, Marinado
+Moscatel De Alejandria, Langosta
+Petit Verdot, Berenjena
+Pinot Grigio, Bass
+Riesling, Marinado
+Sauvignon Blanc, Bass
+Sauvignon Gris, Bass
+Semillon, Bass
+Torontel, Marinado
+Barbera, Judía Pinta
+Cabernet Franc, Judía Pinta
+Carignan, Judía Pinta
+Carmenere, Judía Pinta
+Espumoso, Cangrejo
+Gewurztraminer, Guisantes
+Glera, Cangrejo
+Grenache, Judía Pinta
+Merlot, Judía Pinta
+Montepulciano, Judía Pinta
+Moscatel Blanca, Guisantes
+Moscatel De Alejandria, Cangrejo
+Petit Verdot, Judía Pinta
+Pinot Grigio, Trucha
+Riesling, Guisantes
+Sauvignon Blanc, Trucha
+Sauvignon Gris, Trucha
+Semillon, Trucha
+Torontel, Guisantes
+Barbera, Frijoles Negos
+Cabernet Franc, Frijoles Negos
+Carignan, Frijoles Negos
+Carmenere, Frijoles Negos
+Espumoso, Camarones
+Gewurztraminer, Col
+Glera, Camarones
+Grenache, Frijoles Negos
+Merlot, Frijoles Negos
+Montepulciano, Frijoles Negos
+Moscatel Blanca, Col
+Moscatel De Alejandria, Camarones
+Petit Verdot, Frijoles Negos
+Pinot Grigio, Langosta
+Riesling, Col
+Sauvignon Blanc, Langosta
+Sauvignon Gris, Langosta
+Semillon, Langosta
+Torontel, Col
+Barbera, Frijoles Blancos
+Cabernet Franc, Frijoles Blancos
+Carignan, Frijoles Blancos
+Carmenere, Frijoles Blancos
+Espumoso, Salami
+Gewurztraminer, Lechuga
+Glera, Salami
+Grenache, Frijoles Blancos
+Merlot, Frijoles Blancos
+Montepulciano, Frijoles Blancos
+Moscatel Blanca, Lechuga
+Moscatel De Alejandria, Salami
+Petit Verdot, Frijoles Blancos
+Pinot Grigio, Cangrejo
+Riesling, Lechuga
+Sauvignon Blanc, Cangrejo
+Sauvignon Gris, Cangrejo
+Semillon, Cangrejo
+Torontel, Lechuga
+Barbera, Lenteja
+Cabernet Franc, Lenteja
+Carignan, Lenteja
+Carmenere, Lenteja
+Espumoso, Tocineta
+Gewurztraminer, Palta
+Glera, Tocineta
+Grenache, Lenteja
+Merlot, Lenteja
+Montepulciano, Lenteja
+Moscatel Blanca, Palta
+Moscatel De Alejandria, Tocineta
+Petit Verdot, Lenteja
+Pinot Grigio, Camarones
+Riesling, Palta
+Sauvignon Blanc, Camarones
+Sauvignon Gris, Camarones
+Semillon, Camarones
+Torontel, Palta
+Barbera, Hongos
+Cabernet Franc, Hongos
+Carignan, Hongos
+Carmenere, Hongos
+Espumoso, Charcuteria
+Gewurztraminer, Aguacate
+Glera, Charcuteria
+Grenache, Hongos
+Merlot, Hongos
+Montepulciano, Hongos
+Moscatel Blanca, Aguacate
+Moscatel De Alejandria, Charcuteria
+Petit Verdot, Hongos
+Pinot Grigio, Guisantes
+Riesling, Aguacate
+Sauvignon Blanc, Guisantes
+Sauvignon Gris, Guisantes
+Semillon, Guisantes
+Torontel, Aguacate
+Barbera, Oregano
+Cabernet Franc, Oregano
+Carignan, Oregano
+Carmenere, Oregano
+Espumoso, Jamon
+Gewurztraminer, Escarola
+Glera, Jamon
+Grenache, Oregano
+Merlot, Oregano
+Montepulciano, Oregano
+Moscatel Blanca, Escarola
+Moscatel De Alejandria, Jamon
+Petit Verdot, Oregano
+Pinot Grigio, Col
+Riesling, Escarola
+Sauvignon Blanc, Col
+Sauvignon Gris, Col
+Semillon, Col
+Torontel, Escarola
+Barbera, Tomillo
+Cabernet Franc, Tomillo
+Carignan, Tomillo
+Carmenere, Tomillo
+Espumoso, Batata
+Gewurztraminer, Pimiento Verde
+Glera, Batata
+Grenache, Tomillo
+Merlot, Tomillo
+Montepulciano, Tomillo
+Moscatel Blanca, Pimiento Verde
+Moscatel De Alejandria, Batata
+Petit Verdot, Tomillo
+Pinot Grigio, Lechuga
+Riesling, Pimiento Verde
+Sauvignon Blanc, Lechuga
+Sauvignon Gris, Lechuga
+Semillon, Lechuga
+Torontel, Pimiento Verde
+Barbera, Eneldo
+Cabernet Franc, Eneldo
+Carignan, Eneldo
+Carmenere, Eneldo
+Espumoso, Zanahoria
+Gewurztraminer, Calabaza
+Glera, Zanahoria
+Grenache, Eneldo
+Merlot, Eneldo
+Montepulciano, Eneldo
+Moscatel Blanca, Calabaza
+Moscatel De Alejandria, Zanahoria
+Petit Verdot, Eneldo
+Pinot Grigio, Palta
+Riesling, Calabaza
+Sauvignon Blanc, Palta
+Sauvignon Gris, Palta
+Semillon, Palta
+Torontel, Calabaza
+Barbera, Perejil
+Cabernet Franc, Perejil
+Carignan, Perejil
+Carmenere, Perejil
+Espumoso, Calabaza
+Gewurztraminer, Zanahoria
+Glera, Calabaza
+Grenache, Perejil
+Merlot, Perejil
+Montepulciano, Perejil
+Moscatel Blanca, Zanahoria
+Moscatel De Alejandria, Calabaza
+Petit Verdot, Perejil
+Pinot Grigio, Aguacate
+Riesling, Zanahoria
+Sauvignon Blanc, Aguacate
+Sauvignon Gris, Aguacate
+Semillon, Aguacate
+Torontel, Zanahoria
+Barbera, Anis
+Cabernet Franc, Anis
+Carignan, Anis
+Carmenere, Anis
+Espumoso, Nabo
+Gewurztraminer, Nabo
+Glera, Nabo
+Grenache, Anis
+Merlot, Anis
+Montepulciano, Anis
+Moscatel Blanca, Nabo
+Moscatel De Alejandria, Nabo
+Petit Verdot, Anis
+Pinot Grigio, Escarola
+Riesling, Nabo
+Sauvignon Blanc, Escarola
+Sauvignon Gris, Escarola
+Semillon, Escarola
+Torontel, Nabo
+Barbera, Cardamomo
+Cabernet Franc, Cardamomo
+Carignan, Cardamomo
+Carmenere, Cardamomo
+Espumoso, Zapallo
+Gewurztraminer, Zapallo
+Glera, Zapallo
+Grenache, Cardamomo
+Merlot, Cardamomo
+Montepulciano, Cardamomo
+Moscatel Blanca, Zapallo
+Moscatel De Alejandria, Zapallo
+Petit Verdot, Cardamomo
+Pinot Grigio, Pimiento Verde
+Riesling, Zapallo
+Sauvignon Blanc, Pimiento Verde
+Sauvignon Gris, Pimiento Verde
+Semillon, Pimiento Verde
+Torontel, Zapallo
+Barbera, Gengibre
+Cabernet Franc, Gengibre
+Carignan, Gengibre
+Carmenere, Gengibre
+Gewurztraminer, Menta
+Grenache, Gengibre
+Merlot, Gengibre
+Montepulciano, Gengibre
+Moscatel Blanca, Menta
+Petit Verdot, Gengibre
+Pinot Grigio, Calabaza
+Riesling, Menta
+Sauvignon Blanc, Calabaza
+Sauvignon Gris, Calabaza
+Semillon, Calabaza
+Torontel, Menta
+Barbera, Canela
+Cabernet Franc, Canela
+Carignan, Canela
+Carmenere, Canela
+Gewurztraminer, Albahaca
+Grenache, Canela
+Merlot, Canela
+Montepulciano, Canela
+Moscatel Blanca, Albahaca
+Petit Verdot, Canela
+Pinot Grigio, Zanahoria
+Riesling, Albahaca
+Sauvignon Blanc, Zanahoria
+Sauvignon Gris, Zanahoria
+Semillon, Zanahoria
+Torontel, Albahaca
+Barbera, Pimienta
+Cabernet Franc, Pimienta
+Carignan, Pimienta
+Carmenere, Pimienta
+Gewurztraminer, Cilantro
+Grenache, Pimienta
+Merlot, Pimienta
+Montepulciano, Pimienta
+Moscatel Blanca, Cilantro
+Petit Verdot, Pimienta
+Pinot Grigio, Nabo
+Riesling, Cilantro
+Sauvignon Blanc, Nabo
+Sauvignon Gris, Nabo
+Semillon, Nabo
+Torontel, Cilantro
+Barbera, Vainilla
+Cabernet Franc, Vainilla
+Carignan, Vainilla
+Carmenere, Vainilla
+Gewurztraminer, Shiso
+Grenache, Vainilla
+Merlot, Vainilla
+Montepulciano, Vainilla
+Moscatel Blanca, Shiso
+Petit Verdot, Vainilla
+Pinot Grigio, Zapallo
+Riesling, Shiso
+Sauvignon Blanc, Zapallo
+Sauvignon Gris, Zapallo
+Semillon, Zapallo
+Torontel, Shiso
+Barbera, Clavo
+Cabernet Franc, Clavo
+Carignan, Clavo
+Carmenere, Clavo
+Gewurztraminer, Perejil
+Grenache, Clavo
+Merlot, Clavo
+Montepulciano, Clavo
+Moscatel Blanca, Perejil
+Petit Verdot, Clavo
+Pinot Grigio, Cebolla
+Riesling, Perejil
+Sauvignon Blanc, Cebolla
+Sauvignon Gris, Cebolla
+Semillon, Cebolla
+Torontel, Perejil
+Barbera, Fenogreco
+Cabernet Franc, Fenogreco
+Carignan, Fenogreco
+Carmenere, Fenogreco
+Gewurztraminer, Anis
+Grenache, Fenogreco
+Merlot, Fenogreco
+Montepulciano, Fenogreco
+Moscatel Blanca, Anis
+Petit Verdot, Fenogreco
+Pinot Grigio, Ajo
+Riesling, Anis
+Sauvignon Blanc, Ajo
+Sauvignon Gris, Ajo
+Semillon, Ajo
+Torontel, Anis
+Barbera, Nuez Moscada
+Cabernet Franc, Nuez Moscada
+Carignan, Nuez Moscada
+Carmenere, Nuez Moscada
+Gewurztraminer, Cardamomo
+Grenache, Nuez Moscada
+Merlot, Nuez Moscada
+Montepulciano, Nuez Moscada
+Moscatel Blanca, Cardamomo
+Petit Verdot, Nuez Moscada
+Pinot Grigio, Chalota
+Riesling, Cardamomo
+Sauvignon Blanc, Chalota
+Sauvignon Gris, Chalota
+Semillon, Chalota
+Torontel, Cardamomo
+Gewurztraminer, Pimienta
+Moscatel Blanca, Pimienta
+Pinot Grigio, Cebollin
+Riesling, Pimienta
+Sauvignon Blanc, Cebollin
+Sauvignon Gris, Cebollin
+Semillon, Cebollin
+Torontel, Pimienta
+Gewurztraminer, Gengibre
+Moscatel Blanca, Gengibre
+Pinot Grigio, Menta
+Riesling, Gengibre
+Sauvignon Blanc, Menta
+Sauvignon Gris, Menta
+Semillon, Menta
+Torontel, Gengibre
+Gewurztraminer, Canela
+Moscatel Blanca, Canela
+Pinot Grigio, Basil
+Riesling, Canela
+Sauvignon Blanc, Basil
+Sauvignon Gris, Basil
+Semillon, Basil
+Torontel, Canela
+Gewurztraminer, Vainilla
+Moscatel Blanca, Vainilla
+Pinot Grigio, Cilantro
+Riesling, Vainilla
+Sauvignon Blanc, Cilantro
+Sauvignon Gris, Cilantro
+Semillon, Cilantro
+Torontel, Vainilla
+Gewurztraminer, Clavo
+Moscatel Blanca, Clavo
+Pinot Grigio, Shiso
+Riesling, Clavo
+Sauvignon Blanc, Shiso
+Sauvignon Gris, Shiso
+Semillon, Shiso
+Torontel, Clavo
+Gewurztraminer, Fenogreco
+Moscatel Blanca, Fenogreco
+Pinot Grigio, Perejil
+Riesling, Fenogreco
+Sauvignon Blanc, Perejil
+Sauvignon Gris, Perejil
+Semillon, Perejil
+Torontel, Fenogreco
+Gewurztraminer, Nuez Moscada
+Moscatel Blanca, Nuez Moscada
+Pinot Grigio, Oregano
+Riesling, Nuez Moscada
+Sauvignon Blanc, Oregano
+Sauvignon Gris, Oregano
+Semillon, Oregano
+Torontel, Nuez Moscada
+Gewurztraminer, Comino
+Moscatel Blanca, Comino
+Pinot Grigio, Tomillo
+Riesling, Comino
+Sauvignon Blanc, Tomillo
+Sauvignon Gris, Tomillo
+Semillon, Tomillo
+Torontel, Comino
+Gewurztraminer, Curcuma
+Moscatel Blanca, Curcuma
+Pinot Grigio, Eneldo
+Riesling, Curcuma
+Sauvignon Blanc, Eneldo
+Sauvignon Gris, Eneldo
+Semillon, Eneldo
+Torontel, Curcuma
+Gewurztraminer, Cayena
+Moscatel Blanca, Cayena
+Pinot Grigio, Mejorana
+Riesling, Cayena
+Sauvignon Blanc, Mejorana
+Sauvignon Gris, Mejorana
+Semillon, Mejorana
+Torontel, Cayena
+Gewurztraminer, Pimenton
+Moscatel Blanca, Pimenton
+Riesling, Pimenton
+Torontel, Pimenton
+Gewurztraminer, Chipotle
+Moscatel Blanca, Chipotle
+Riesling, Chipotle
+Torontel, Chipotle
