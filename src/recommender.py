@@ -15,9 +15,8 @@ query = "SELECT * FROM wine_database;"
 df = pd.read_sql_query(query, conn)
 conn.close()
 
-
 # Filtrando las columnas relevantes
-df = df[['product_name', 'price', 'pairing', 'gender', 'age', 'ses', 'rank']]
+df = df[['product_name', 'price', 'pairing', 'gender', 'age', 'ses', 'rank', 'image_url']]
 
 # Manejo de valores faltantes
 imputer = SimpleImputer(strategy='most_frequent')
@@ -43,13 +42,12 @@ df = df.dropna()
 # Agrupar datos por nombre de producto y maridajes
 df_agrupado = df.groupby('product_name')['pairing'].apply(lambda x: ', '.join(set(x))).reset_index()
 
-# Función de recomedación
-def get_recommendations_by_pairings_gender_and_ses(pairing_inputs, gender_input, ses_input, age_input, k=5):
+# Función de recomendación
+def get_recommendations_by_pairings_gender_and_ses(pairing_inputs, gender_input, ses_input, age_input, k=3):
     # Identificar las columnas de género y SES después del one-hot encoding
     gender_column = f'gender_{gender_input}'
     ses_column = f'ses_{ses_input}'
     age_column = f'age_{age_input}'
-
 
     # Verificar si las columnas existen
     if gender_column not in df.columns or ses_column not in df.columns or age_column not in df.columns:
@@ -63,12 +61,12 @@ def get_recommendations_by_pairings_gender_and_ses(pairing_inputs, gender_input,
         return []
 
     # Inicializar el modelo k-NN
-    knn = NearestNeighbors(n_neighbors=k, algorithm='ball_tree').fit(df_filtrado.drop(['product_name', 'pairing'], axis=1))
+    knn = NearestNeighbors(n_neighbors=5, algorithm='ball_tree').fit(df_filtrado.drop(['product_name', 'pairing', 'image_url'], axis=1))
 
     recommendations = []
     for product_name in df_filtrado['product_name'].unique():
         # Obtener las características del producto
-        product_features = df_filtrado[df_filtrado['product_name'] == product_name].drop(['product_name', 'pairing'], axis=1)
+        product_features = df_filtrado[df_filtrado['product_name'] == product_name].drop(['product_name', 'pairing', 'image_url'], axis=1)
 
         if not product_features.empty:
             # Utilizar la media de las características si hay múltiples filas para el mismo producto
@@ -77,7 +75,9 @@ def get_recommendations_by_pairings_gender_and_ses(pairing_inputs, gender_input,
             # Obtener recomendaciones utilizando k-NN
             distances, indices = knn.kneighbors(product_feature_avg, n_neighbors=k)
             for idx in indices[0]:
-                recommended_product_name = df_filtrado.iloc[idx]['product_name']
-                recommendations.append(recommended_product_name)
+                recommended_product = df_filtrado.iloc[idx]
+                recommended_product_name = recommended_product['product_name']
+                recommended_image_url = recommended_product['image_url']
+                recommendations.append((recommended_product_name, recommended_image_url))
 
     return list(set(recommendations))  # Eliminar duplicados
