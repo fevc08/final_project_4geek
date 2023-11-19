@@ -7,24 +7,24 @@ from sklearn.neighbors import NearestNeighbors
 import joblib
 
 # Cargar del modelo entrenado
-knn = joblib.load('../models/wine_pairing_recommendation_knn.joblib')
+knn = joblib.load('../models/knn_wine_model.joblib')
 
 # Conexión a la base de datos
-conn = sqlite3.connect('../data/wine_db.db')
+conn = sqlite3.connect("../data/wine_store.db")
 query = "SELECT * FROM wine_database;"
 df = pd.read_sql_query(query, conn)
 conn.close()
 
 # Filtrando las columnas relevantes
-df = df[['product_name', 'price', 'pairing', 'gender', 'age', 'ses', 'rank', 'image_url']]
+df = df[['product_name', 'price', 'pairing', 'gender', 'age', 'rank', 'image_url']]
 
 # Manejo de valores faltantes
 imputer = SimpleImputer(strategy='most_frequent')
-df[['gender', 'age', 'ses', 'rank']] = imputer.fit_transform(df[['gender', 'age', 'ses', 'rank']])
+df[['gender', 'age', 'rank']] = imputer.fit_transform(df[['gender', 'age', 'rank']])
 
 # Codificación One-Hot para variables categóricas
 one_hot_encoder = OneHotEncoder(sparse=False)
-categorical_columns = ['gender', 'ses', 'age']
+categorical_columns = ['gender', 'age']
 df_encoded = pd.DataFrame(one_hot_encoder.fit_transform(df[categorical_columns]))
 df_encoded.columns = one_hot_encoder.get_feature_names_out(categorical_columns)
 
@@ -43,19 +43,18 @@ df = df.dropna()
 df_agrupado = df.groupby('product_name')['pairing'].apply(lambda x: ', '.join(set(x))).reset_index()
 
 # Función de recomendación
-def get_recommendations_by_pairings_gender_and_ses(pairing_inputs, gender_input, ses_input, age_input, k=3):
+def get_recommendations_by_pairings_gender_and_ses(pairing_inputs, gender_input, age_input, k=3):
     # Identificar las columnas de género y SES después del one-hot encoding
     gender_column = f'gender_{gender_input}'
-    ses_column = f'ses_{ses_input}'
     age_column = f'age_{age_input}'
 
     # Verificar si las columnas existen
-    if gender_column not in df.columns or ses_column not in df.columns or age_column not in df.columns:
+    if gender_column not in df.columns or age_column not in df.columns:
         return "Género, Rango etario o NSE especificado no se encuentra disponible en los datos."
 
     # Pre-filtrado basado en maridajes, género y SES
     df_filtrado = df[df['product_name'].isin(df_agrupado[df_agrupado['pairing'].apply(lambda x: all(pairing in x for pairing in pairing_inputs))]['product_name'])]
-    df_filtrado = df_filtrado[(df_filtrado[gender_column] == 1) & (df_filtrado[ses_column] == 1) & (df_filtrado[age_column] == 1)]
+    df_filtrado = df_filtrado[(df_filtrado[gender_column] == 1) & (df_filtrado[age_column] == 1)]
 
     if df_filtrado.empty:
         return []
