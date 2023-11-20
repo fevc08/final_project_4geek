@@ -42,10 +42,10 @@ def main():
     st.title("Wine Recommender App")
 
     # Get user input
-    product_category = st.selectbox("Select product category:", ["Category_A", "Category_B", "Category_C"])
-    price = st.slider("Select price:", min_value=0.0, max_value=1.0, step=0.01, value=0.5)
-    age = st.slider("Select age:", min_value=0.0, max_value=1.0, step=0.01, value=0.5)
-    gender = st.selectbox("Select gender:", ["Male", "Female"])
+    product_category = st.selectbox("Select product category:", ['Tinto', 'Blanco', 'Espumoso'])
+    price = st.slider("Select price:", min_value=0, max_value=10000000, step=1, value=0)
+    age = st.slider("Select age:", min_value=18.0, max_value=80.0, step=0.01, value=18.0)
+    gender = st.selectbox("Select gender:", ["MUJER", "HOMBRE", "OTRO"])
 
     # Create a DataFrame with user input
     user_data = pd.DataFrame({
