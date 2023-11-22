@@ -1,76 +1,105 @@
 import streamlit as st
+import os
 import pandas as pd
-import sqlite3
-from sklearn.preprocessing import OneHotEncoder, MinMaxScaler
+from sklearn.preprocessing import MinMaxScaler
 from sklearn.neighbors import KNeighborsClassifier
 import joblib
 
-# Load the trained model
+# Function to load data
+def load_data(file_path):
+    if not os.path.exists(file_path):
+        st.error(f"Error: File not found at {file_path}")
+        st.stop()  # Stop the script if the file is not found
+    return pd.read_csv(file_path)
+
+# Load the trained model and scaler
 model_path = "../models_fidel/best_knn.plk"
 knn_model = joblib.load(model_path)
+scaler = joblib.load('../models_fidel/scaler.pkl')
 
-# Function to preprocess input data
-def preprocess_input(data):
-    # Your preprocessing steps here
-    one_hot_encoder = OneHotEncoder(sparse=False)
-    categorical_columns = ['product_category', 'gender']
-    pairing_encoded_df = pd.DataFrame(one_hot_encoder.fit_transform(data[categorical_columns]))
-    pairing_encoded_df.columns = one_hot_encoder.get_feature_names_out(categorical_columns)
+# Load pairing data
+data_folder = os.path.join(os.path.dirname(__file__), 'data_fidel/processed/')
+pairing_df = load_data(os.path.join(data_folder, 'pairing_df.csv'))
+pairing_agrupado_df = load_data(os.path.join(data_folder, 'paring_agrupado.csv'))
 
-    scaler = MinMaxScaler()
-    numeric_columns = ['price', 'age']
-    data[numeric_columns] = scaler.fit_transform(data[numeric_columns])
+# Recommendation function
+def get_recommendations(pairing_inputs, category_input, price_input, gender_input, age_input):
+    # Inverse transform age and price
+    scaled_age = scaler.fit_transform([[age_input]])
+    scaled_price = scaler.fit_transform([[price_input]])
 
-    data = pd.concat([data, pairing_encoded_df], axis=1).drop(categorical_columns, axis=1)
-    data = data.dropna()
+    # Identify columns
+    category_column = f'category_{category_input}'
+    price_column = f'price_{scaled_price[0][0]}'
+    gender_column = f'gender_{gender_input}'
+    age_column = f'age_{scaled_age[0][0]}'
 
-    return data
+    # Check if columns exist
+    if not all(col in pairing_df.columns for col in [category_column, price_column, gender_column, age_column]):
+        return "Lo sentimos, no encontramos el vino perfecto para ti"
+
+    # Pre-filter based on pairings, gender, and SES
+    filtered_df = pairing_df[
+        pairing_df['product_name'].isin(
+            pairing_agrupado_df[
+                pairing_agrupado_df['pairing'].apply(lambda x: all(pairing in x for pairing in pairing_inputs))
+            ]['product_name']
+        )
+    ]
+    filtered_df = filtered_df[(filtered_df[gender_column] == 1) & (filtered_df[age_column] == 1)]
+
+    if filtered_df.empty:
+        return []
+
+    recommendations = []
+    for product_name in filtered_df['product_name'].unique():
+        product_features = filtered_df[filtered_df['product_name'] == product_name].drop(
+            ['product_name', 'pairing', 'image_url'], axis=1
+        )
+
+        if not product_features.empty:
+            product_feature_avg = product_features.mean().values.reshape(1, -1)
+            distances, indices = knn_model.kneighbors(product_feature_avg)
+            for idx in indices[0]:
+                recommended_product = filtered_df.iloc[idx]
+                recommended_product_name = recommended_product['product_name']
+                recommended_image_url = recommended_product['image_url']
+                recommendations.append((recommended_product_name, recommended_image_url))
+
+    return list(set(recommendations))
 
 # Streamlit app
-# Dataframe pairing
-con = sqlite3.connect("../data_fidel/interim/wine_products.db")
+st.title('Recomendador de Vinos')
 
-query = "SELECT * FROM pairing;"
+# Input form
+with st.form('input_form'):
+    pairing_inputs = st.multiselect('Seleccione los maridajes:', pairing_df["pairing"].unique().values())  # List of pairings
+    category_input = st.selectbox("Select product category:", ["Tinto", "Blanco", "Espumoso"])
+    price_input = st.slider("Select price:", 0, 100000, 0, step=0)
+    gender_input = st.selectbox('Género', ['HOMBRE', 'MUJER', 'OTRO'])
+    age_input = st.slider("Edad:", 18.0, 75.0, 18.0, step=0.5)
+    submit_button = st.form_submit_button('Obtener Recomendaciones')
 
-pairing_df = pd.read_sql_query(query, con=con)
-con.close()
-
-# Dataframe paring_agrupado
-pairing_df_agrupado = pd.read_csv("../data_fidel/processed/paring_agrupado.csv")
-
-def main():
-    st.title("Wine Recommender App")
-
-    # Get user input
-    product_category = st.selectbox("Select product category:", ['Tinto', 'Blanco', 'Espumoso'])
-    price = st.slider("Select price:", min_value=0, max_value=10000000, step=1, value=0)
-    age = st.slider("Select age:", min_value=18.0, max_value=80.0, step=0.01, value=18.0)
-    gender = st.selectbox("Select gender:", ["MUJER", "HOMBRE", "OTRO"])
-
-    # Create a DataFrame with user input
-    user_data = pd.DataFrame({
-        'product_category': [product_category],
-        'price': [price],
-        'age': [age],
-        'gender': [gender],
-    })
-
-    # Preprocess user input
-    user_data_processed = preprocess_input(user_data)
-
-    # Make predictions
-    prediction = knn_model.predict(user_data_processed)
-
-    # Display recommended product_name and corresponding image_url
-    recommended_product_name = prediction[0]
-    recommended_product_row = pairing_df_agrupado[pairing_df_agrupado['product_name'] == recommended_product_name].iloc[0]
-    recommended_image_url = pairing_df[pairing_df['product_name'] == recommended_product_name]['image_url'].iloc[0]
-
-    st.subheader("Recommended Wine:")
-    st.write(recommended_product_name)
-
-    # Display the image
-    st.image(recommended_image_url, caption='Recommended Wine Image', use_column_width=True)
-
-if __name__ == "__main__":
-    main()
+if submit_button:
+    recommendations = get_recommendations(pairing_inputs, category_input, price_input, gender_input, age_input)
+    if recommendations:
+        st.write('Recomendaciones:')
+        recommendations.sort(key=lambda x: x[1], reverse=True)
+        top_recommendations = recommendations[:3]
+        
+        # Display recommendations
+        num_products_per_row = 5
+        num_recommendations = len(top_recommendations)
+        cols = st.columns(num_products_per_row)
+        for i in range(0, num_recommendations, num_products_per_row):
+            for j in range(num_products_per_row):
+                idx = i + j
+                if idx < num_recommendations:
+                    product_name, image_url = top_recommendations[idx]
+                    col = cols[j]
+                    
+                    # Center image vertically using HTML
+                    with col:
+                        col.markdown(f'<p style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;"><img src="{image_url}" alt="{product_name}" style="max-height: 200px;">{product_name}</p>', unsafe_allow_html=True)
+    else:
+        st.write('No se encontraron recomendaciones.')
