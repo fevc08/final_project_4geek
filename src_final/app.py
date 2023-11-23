@@ -1,7 +1,7 @@
 import streamlit as st
 import os
 import pandas as pd
-from sklearn.preprocessing import OneHotEncoder, MinMaxScaler
+from sklearn.preprocessing import OneHotEncoder
 from sklearn.neighbors import KNeighborsClassifier
 import joblib
 
@@ -26,11 +26,6 @@ one_hot_encoder = OneHotEncoder(sparse=False)
 categorical_columns = ['product_category', 'gender', 'age']
 pairing_encoded_df = pd.DataFrame(one_hot_encoder.fit_transform(pairing_df[categorical_columns]))
 pairing_encoded_df.columns = one_hot_encoder.get_feature_names_out(categorical_columns)
-
-# Normalización de variables numéricas
-scaler = MinMaxScaler()
-numeric_columns = ['price']
-pairing_df[numeric_columns] = scaler.fit_transform(pairing_df[numeric_columns])
 
 # Combinar las columnas codificadas y normalizadas
 pairing_df = pd.concat([pairing_df, pairing_encoded_df], axis=1).drop(categorical_columns, axis=1)
@@ -89,9 +84,13 @@ def get_recommendations_by_pairings_gender_and_ses(pairing_inputs, gender_input,
             product_feature_avg = product_features.mean().values.reshape(1, -1)
 
             # Obtener recomendaciones utilizando k-NN
-            predicted_rating = knn.predict(product_feature_avg)
-            recommendations.append((product_name, tuple(predicted_rating)))  # Convert NumPy array to tuple
-
+            distances, indices = knn.kneighbors(product_feature_avg, n_neighbors=k)
+            for idx in indices[0]:
+                recommended_product = df_filtrado.iloc[idx]
+                recommended_product_name = recommended_product['product_name']
+                recommended_image_url = recommended_product['image_url']
+                recommendations.append((recommended_product_name, recommended_image_url))
+                
     return list(set(recommendations))  # Eliminar duplicados
 
 # Streamlit app
@@ -103,7 +102,7 @@ with st.form('input_form'):
     category_input = st.selectbox("Select product category:", ["Tinto", "Blanco", "Espumoso"])
     price_input = st.slider("Seleccionar precio:", 0, 50000, 0, step=100)
     gender_input = st.selectbox('Género', ['HOMBRE', 'MUJER', 'OTRO'])
-    age_input = st.selectbox('Rango de Edad', ['18-24', '25-34', '35-44', '45-54', '55-75'])
+    age_input = st.selectbox('Rango de Edad', ['18-24', '25-34', '35-44', '45-54', '55+'])
     submit_button = st.form_submit_button('Obtener Recomendaciones')
 
 if submit_button:
@@ -114,7 +113,7 @@ if submit_button:
         top_recommendations = recommendations[:3]
         
         # Display recommendations
-        num_products_per_row = 3
+        num_products_per_row = 5
         num_recommendations = len(top_recommendations)
         cols = st.columns(num_products_per_row)
         for i in range(0, num_recommendations, num_products_per_row):
@@ -123,9 +122,8 @@ if submit_button:
                 if idx < num_recommendations:
                     product_name, image_url = top_recommendations[idx]
                     col = cols[j]
-                    
-                    # Center image vertically using HTML
-                    with col:
-                        col.markdown(f'<p style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;"><img src="{image_url}" alt="{product_name}" style="max-height: 200px;">{product_name}</p>', unsafe_allow_html=True)
+            
+            # Display image and product name using Streamlit functions
+            col.image(image_url, caption=product_name, use_column_width=True)    
     else:
         st.write('No se encontraron recomendaciones.')
