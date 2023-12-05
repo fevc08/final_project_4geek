@@ -20,7 +20,7 @@ if submit_button:
         recommendations.sort(key=lambda x: x[1], reverse=True)
         top_recommendations = recommendations[:3]
         
-        # Crear una columna para mostrar 3 productos por fila
+        # Display recommendations
         num_products_per_row = 3
         num_recommendations = len(top_recommendations)
         cols = st.columns(num_products_per_row)
@@ -30,9 +30,8 @@ if submit_button:
                 if idx < num_recommendations:
                     product_name, image_url = top_recommendations[idx]
                     col = cols[j]
-                    
-                    # Centrar la imagen verticalmente utilizando HTML
-                    with col:
-                        col.markdown(f'<p style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;"><img src="{image_url}" alt="{product_name}" style="max-height: 200px;">{product_name}</p>', unsafe_allow_html=True)
+            
+            # Display image and product name using Streamlit functions
+            col.image(image_url, caption=product_name, use_column_width=True)    
     else:
         st.write('No se encontraron recomendaciones.')
