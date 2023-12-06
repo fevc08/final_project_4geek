@@ -22,3 +22,4 @@ Para este trabajo, empleamos K-Nearest Neighbor (knn), para clasificar cada uno 
 ## **Demo**
 - *Versión 1:* https://wine-pairing-recommender.onrender.com/
 - *Versión 2:* https://wine-n7jy.onrender.com
+- +Versión 3:* https://wine-app-recommender.onrender.com
