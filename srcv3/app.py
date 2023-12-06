@@ -5,10 +5,10 @@ import pandas as pd
 import os
 
 # Load the model
-dt_wine_best = load(open("../models_fidel/dt_wine_best.pkl", "rb"))
+dt_wine_best = load(open("../modelsV3/dt_wine_best.pkl", "rb"))
 
 # Load label encoders
-with open('../models_fidel/label_encoders.pkl', 'rb') as f:
+with open('../modelsV3/label_encoders.pkl', 'rb') as f:
     label_encoders = load(f)
     
 ordinal_mapping = {'18-24': 1, '25-34': 2, '35-44': 3, '45-54': 4, '55+': 5}
@@ -34,13 +34,13 @@ unique_predictions = set()
 # Make predictions for each selected combination of 'maridaje' and 'categorias'
 if st.button('Recomendar'):
     for categoria in categorias:
-        categoria_n = np.where(label_encoders['categorias'] == categoria)[0][0]
+        categorias_n = np.where(label_encoders['categorias'] == categoria)[0][0]
             
         for maridaje in maridajes:
             maridaje_n = np.where(label_encoders['maridaje'] == maridaje)[0][0]
         
             # Make a prediction
-            prediction = dt_wine_best.predict([[categoria_n, precio, maridaje_n, genero_n, edad_n]])
+            prediction = dt_wine_best.predict([[categorias_n, precio, maridaje_n, genero_n, edad_n]])
             
             # Add the prediction to the set
             unique_predictions.add(label_encoders["productos"][prediction[0]])
