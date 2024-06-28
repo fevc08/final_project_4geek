@@ -16,7 +16,7 @@ touch models/train.py models/evaluate.py
 touch notebooks/eda.ipynb notebooks/preprocessing.ipynb notebooks/examples.ipynb
 touch tests/test_app.py tests/test_model.py tests/conftest.py
 touch .github/ISSUE_TEMPLATE.md .github/workflows/ci.yml
-touch .gitignore README.md requirements.txt setup.py Procfile
+touch .gitignore README.md requirements.txt environment.yml project_structure.sh Procfile
 
 # Mensaje de finalización
 echo "Project structure created"
