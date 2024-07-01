@@ -1,15 +1,16 @@
-name: wine_app
+name: wine-ml
 channels:
   - conda-forge
 dependencies:
   - python=3.11
-  - numpy
-  - pandas
-  - scikit-learn
-  - jupyter
-  - matplotlib
-  - seaborn
   - flask
-  - sqlalchemy
-  - psycopg2-binary
-  - gunicorn
+  - scikit-learn
+  - pandas
+  - numpy
+  - selenium
+  - bs4
+  - pytest
+  - jupyter
+  - pip
+  - pip:
+    - webdriver-manager
